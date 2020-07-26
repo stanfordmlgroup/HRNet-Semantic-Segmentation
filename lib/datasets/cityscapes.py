@@ -109,7 +109,7 @@ class Cityscapes(BaseDataset):
             image = image.transpose((2, 0, 1))
 
             return image.copy(), np.array(size), name
-
+       
         label = cv2.imread(os.path.join(self.root,'cityscapes',item["label"]),
                            cv2.IMREAD_GRAYSCALE)
         label = self.convert_label(label)

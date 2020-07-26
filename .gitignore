@@ -8,3 +8,5 @@ pretrained_models
 scripts/
 detail-api/
 data/list
+.*.swp
+last.vim
