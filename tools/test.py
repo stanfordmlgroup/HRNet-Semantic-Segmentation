@@ -132,7 +132,8 @@ def main():
              test_dataset, 
              testloader, 
              model,
-             sv_dir=final_output_dir)
+             sv_dir=final_output_dir,
+             sv_pred=True)
 
     end = timeit.default_timer()
     logger.info('Mins: %d' % np.int((end-start)/60))
